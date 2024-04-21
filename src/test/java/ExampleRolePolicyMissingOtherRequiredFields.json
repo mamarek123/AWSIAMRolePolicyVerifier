@@ -1,0 +1,19 @@
+{
+  "PolicyDocument": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "IamListAccess",
+        "Action": [
+          "iam:ListRoles",
+          "iam:ListUsers"
+        ],
+        "Resource": "Resource1"
+      }
+    ]
+  }
+}
